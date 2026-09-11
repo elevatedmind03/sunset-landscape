@@ -673,29 +673,66 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height
   .hero-scroll { display: none; }
 }
 
-@media (max-width: 640px) {
-  .section { padding: 72px 0; }
-  .services-grid, .why-grid, .testi-grid, .areas-grid { grid-template-columns: 1fr; }
-  .process-grid { grid-template-columns: 1fr 1fr; }
-  .cta-copy, .quote-form { padding: 44px 24px; }
-  .form-row { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-  .mobile-bar { display: block; }
-  .to-top { bottom: 110px; right: 14px; }
-  body { padding-bottom: 0; }
+@media (max-width: 768px) {
+  .header-phone { display: none; }
+  .site-header { padding: 14px 0; }
+  .site-header.scrolled { padding: 8px 0; }
+  .brand-mark { width: 36px; height: 36px; }
+  .brand-name { font-size: 18px; }
+  .brand-sub { font-size: 9px; }
+  .hero h1 { font-size: clamp(34px, 8vw, 52px); }
+  .hero-sub { font-size: 15px; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; }
+  .trust-row { gap: 10px 20px; }
+  .trust-item { font-size: 12px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .stat-item:not(:last-child)::after { display: none; }
+  .badges-row { gap: 16px; }
+  .badge-item { font-size: 12px; gap: 8px; }
+  .badge-icon { width: 34px; height: 34px; }
+  .badge-icon svg { width: 16px; height: 16px; }
+  .gallery-tabs { overflow-x: auto; flex-wrap: nowrap; justify-content: flex-start; -webkit-overflow-scrolling: touch; padding-bottom: 8px; scrollbar-width: none; }
+  .gallery-tabs::-webkit-scrollbar { display: none; }
+  .g-tab { white-space: nowrap; flex-shrink: 0; }
   .ba-stage { aspect-ratio: 4/3; }
-  .hero-content { padding-bottom: 48px; }
-  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
-  .stat-item:nth-child(2)::after { display: none; }
-  .badges-row { gap: 20px; }
-  .badge-item { font-size: 13px; }
-  .float-cta { bottom: 16px; right: 16px; }
-  .float-cta a { padding: 14px 22px; font-size: 14px; }
+  .ba-grip { width: 48px; height: 48px; }
+  .ba-grip svg { width: 18px; height: 18px; }
+  .process-grid { grid-template-columns: 1fr 1fr; }
+  .cta-copy, .quote-form { padding: 40px 24px; }
+  .form-row { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer { padding: 48px 0 24px; }
+  .mobile-bar { display: block; }
+  body { padding-bottom: 72px; }
+  .to-top { bottom: 130px; right: 14px; }
+  .float-cta { display: none !important; }
+  .section { padding: 60px 0; }
+  .section-head { margin-bottom: 36px; }
+  .section-head h2 { font-size: clamp(26px, 6vw, 38px); }
+  .hero-content { padding: 100px 0 48px; }
 }
 
-@media (max-width: 400px) {
-  .brand-name { font-size: 18px; }
-  .hero h1 { font-size: 38px; }
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  .section { padding: 48px 0; }
+  .stats-grid { gap: 16px; }
+  .stat-num { font-size: 28px; }
+  .stat-label { font-size: 11px; }
+  .services-grid { gap: 16px; }
+  .service-card { padding: 24px 20px; }
+  .service-icon { width: 48px; height: 48px; }
+  .service-icon svg { width: 24px; height: 24px; }
+  .service-card h3 { font-size: 18px; }
+  .why-card { padding: 24px 20px; }
+  .testi-card { padding: 28px 22px; }
+  .area-card { padding: 28px 22px; }
+  .faq-q { padding: 18px 18px; font-size: 15px; min-height: 50px; }
+  .faq-a p { padding: 0 18px 18px; }
+  .cta-copy, .quote-form { padding: 32px 18px; }
+  .intro-badge { position: relative; left: auto; bottom: auto; margin-top: 16px; }
+  .mobile-menu a.m-link { font-size: 24px; }
+  .hero-actions .btn { min-height: 52px; }
 }
 
 /* ---------- Scroll Progress ---------- */
